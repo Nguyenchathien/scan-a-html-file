@@ -32,6 +32,15 @@ I. A file (User is able to config the output destination)
 II. Node Writable Stream
 III. Console
 
+#configuration
+# files
+INPUT_FILE_PATH=/public/files/inputs/index.html
+OUTPUT_FILE_PATH=/public/files/outputs/output.txt
+OUTSREAM_FILE_PATH=/public/files/outputs/outstream.txt
+
+# constant
+STRONG_LIMIT=15
+
 # Basic usage
 1. Input file:
 /**

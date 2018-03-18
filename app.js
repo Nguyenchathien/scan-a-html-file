@@ -78,12 +78,12 @@ scanHtmlFile.prototype.detectSEOtag = function(rules) {
     const headMeta = (names) => {
         names.forEach(name => {
             const tagWithNameCount = htmlTags.filter(
-                htmlTag => (htmlTag.name === META_TAG && htmlTag.attributes !== undefined && htmlTag.attributes.name === name)
-    ).length;
-        if (tagWithNameCount === 0) {
-            str += "This HTML file does not have a <meta name=\""+ name+"\" .../> tag" + "\r\n";
-        }
-    });
+                    htmlTag => (htmlTag.name === META_TAG && htmlTag.attributes !== undefined && htmlTag.attributes.name === name)
+                ).length;
+            if (tagWithNameCount === 0) {
+                str += "This HTML file does not have a <meta name=\""+ name+"\" .../> tag" + "\r\n";
+            }
+        });
     };
 
     // Check the limit of a certain HTML tag
